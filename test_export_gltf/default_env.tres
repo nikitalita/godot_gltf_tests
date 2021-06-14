@@ -1,0 +1,21 @@
+[gd_resource type="Environment" load_steps=5 format=2]
+
+[sub_resource type="Gradient" id=1]
+offsets = PackedFloat32Array( 0 )
+colors = PackedColorArray( 0.466667, 0.466667, 0.466667, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="PanoramaSkyMaterial" id=3]
+panorama = SubResource( 2 )
+
+[sub_resource type="Sky" id=4]
+sky_material = SubResource( 3 )
+
+[resource]
+background_mode = 2
+background_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+sky = SubResource( 4 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+reflected_light_source = 2
